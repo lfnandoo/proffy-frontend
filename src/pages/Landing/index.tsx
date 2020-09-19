@@ -25,14 +25,14 @@ export default function Landing() {
         />
 
         <div className="buttons-container">
-          <a className="study">
+          <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar" />
             Estudar
-          </a>
-          <a className="give-classes">
+          </Link>
+          <Link to="/give-classes" className="give-classes">
             <img src={giveClassesIcon} alt="Dar Aulas" />
             Dar Aulas
-          </a>
+          </Link>
         </div>
 
         <span className="total-connections">

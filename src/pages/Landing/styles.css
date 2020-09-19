@@ -45,6 +45,7 @@
   border-radius: 0.8rem;
   margin-right: 1.6rem;
   font: 700 2rem Archivo;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
