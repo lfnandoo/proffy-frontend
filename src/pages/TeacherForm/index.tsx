@@ -1,10 +1,10 @@
 import React from "react";
-import './styles.css';
+import "./styles.css";
 
 import PageHeader from "../../components/PageHeader";
-import Input from '../../components/Input';
+import Input from "../../components/Input";
 
-import warningIcon from '../../assets/images/icons/warning.svg';
+import warningIcon from "../../assets/images/icons/warning.svg";
 
 export default function TeacherForm() {
   return (
