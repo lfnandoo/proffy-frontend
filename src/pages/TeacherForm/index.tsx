@@ -7,6 +7,7 @@ import Textarea from "../../components/Textarea";
 import Select from "../../components/Select";
 
 import warningIcon from "../../assets/images/icons/warning.svg";
+import api from "../../services/api";
 
 export default function TeacherForm() {
   const [name, setName] = React.useState("");
@@ -28,7 +29,22 @@ export default function TeacherForm() {
   function handleCreateClass(e: FormEvent) {
     e.preventDefault();
 
-    console.log({ name, avatar, subject, bio, whatsapp, cost });
+    api
+      .post("classes", {
+        name,
+        avatar,
+        whatsapp,
+        bio,
+        subject,
+        cost: Number(cost),
+        schedule: scheduleItems,
+      })
+      .then(() => {
+        alert("Cadastro finalizado com sucesso!");
+      })
+      .catch(() => {
+        alert("Erro no cadastro!");
+      });
   }
 
   function setScheduleItemValue(
