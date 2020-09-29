@@ -1,4 +1,5 @@
 import React, { FormEvent } from "react";
+import { useHistory } from "react-router-dom";
 import "./styles.css";
 
 import PageHeader from "../../components/PageHeader";
@@ -10,6 +11,8 @@ import warningIcon from "../../assets/images/icons/warning.svg";
 import api from "../../services/api";
 
 export default function TeacherForm() {
+  const history = useHistory();
+
   const [name, setName] = React.useState("");
   const [avatar, setAvatar] = React.useState("");
   const [whatsapp, setWhatsapp] = React.useState("");
@@ -41,6 +44,8 @@ export default function TeacherForm() {
       })
       .then(() => {
         alert("Cadastro finalizado com sucesso!");
+
+        history.push("/");
       })
       .catch(() => {
         alert("Erro no cadastro!");
