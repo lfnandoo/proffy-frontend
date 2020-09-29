@@ -50,7 +50,7 @@ Made during "Next Level Week 2.0".
 ## 🔖 Layout
 
 <p align="">
-  <img alt="Layout" src="./" width="100%">
+  <img alt="Layout" src="https://imgur.com/YNMjJtO.png" width="100%">
 </p>
 ---
 
